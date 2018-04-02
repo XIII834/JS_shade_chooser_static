@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JSSC test</title>
+	<link rel="stylesheet" href="jssc.css">
+	<style>
+		body, html {
+			padding: 0;
+			margin: 0;
+		}
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			background-color: black;
+		}
+
+		button {
+			font-size: 100px;
+			border: solid 2px black;
+			cursor: pointer;
+		}
+		p {
+			-ms-user-select: none; 
+		    -moz-user-select: none; 
+		    -webkit-user-select: none; 
+		    user-select: none;
+		    color: white;
+		}
+	</style>
+</head>
+<body>
+	<!-- <p>This html page need for only testing functional of framework.</p>
+	
+	<button onclick="jsscToggle()">PUSH</button> -->
+
+	<p>Эта кнопка является любым элементом, при нажатии на который должна появляться палитра</p>
+	
+	<button
+	data-item-title="Лента такая то"
+	data-item-article="020120"
+	data-item-title-link="#"
+	data-wave="420, 430, 500, 510-600"
+	data-temp="2200-20000"
+
+	onclick="jsscToggle(this)">НАЖМИ</button>
+
+<script src="jssc.js"></script>
+</body>
+</html>
